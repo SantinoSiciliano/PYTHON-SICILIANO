@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Mi Proyecto{% endblock %}</title>
+</head>
+<body>
+    <nav>
+        <a href="{% url 'home' %}">Inicio</a>
+        <a href="{% url 'agregar_libro' %}">Agregar Libro</a>
+        <a href="{% url 'agregar_autor' %}">Agregar Autor</a>
+        <a href="{% url 'agregar_editorial' %}">Agregar Editorial</a>
+        <a href="{% url 'buscar' %}">Buscar</a>
+    </nav>
+    
+    {% block content %}
+    {% endblock %}
+</body>
+</html>
