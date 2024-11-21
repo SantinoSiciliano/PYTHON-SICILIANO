@@ -34,3 +34,27 @@ Buscar:
 ![image](https://github.com/user-attachments/assets/86b20ef3-699c-4e43-9153-5f45fcc0a400)
 
 Aqui puedes buscar el nombre del libro que este registrado en la base de datos y este te dara el nombre del libro y su autor.
+
+
+
+
+
+
+
+De esta forma se ven los direntes tipos de archivos en sus bases de datos:
+
+AUTOR:
+
+![image](https://github.com/user-attachments/assets/d48ed8c5-2a81-40f3-abab-0209e177f800)
+
+
+EDITORIAL:
+
+![image](https://github.com/user-attachments/assets/a2310640-6d1b-4634-bfba-91992b361940)
+
+
+LIBRO:
+
+![image](https://github.com/user-attachments/assets/e019837c-e582-456f-95a9-35c94144c03a)
+
+
