@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+
+{% block title %}Eliminar Blog{% endblock %}
+
+{% block content %}
+    <h2>Eliminar Blog</h2>
+    <p>¿Estás seguro de que deseas eliminar este blog?</p>
+    <form method="post">
+        {% csrf_token %}
+        <button type="submit">Sí, eliminar</button>
+    </form>
+    <a href="{% url 'listar_blogs' %}">Cancelar</a>
+{% endblock %}

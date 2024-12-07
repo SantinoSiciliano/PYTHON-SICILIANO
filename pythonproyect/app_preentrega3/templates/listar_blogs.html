@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+{% block title %}Blogs{% endblock %}
+
+{% block content %}
+    <h2>Listado de Blogs</h2>
+    <a href="{% url 'agregar_blog' %}">Agregar Blog</a>
+    <ul>
+    {% for blog in blogs %}
+        <li>
+            <h3>{{ blog.titulo }}</h3>
+            <p>{{ blog.subtitulo }}</p>
+            <a href="{% url 'editar_blog' blog.id %}">Editar</a>
+            <form method="post" action="{% url 'eliminar_blog' blog.id %}">
+                {% csrf_token %}
+                <button type="submit">Eliminar</button>
+            </form>
+        </li>
+    {% endfor %}
+    </ul>
+{% endblock %}
