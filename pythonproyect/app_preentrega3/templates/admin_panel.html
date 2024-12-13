@@ -1,0 +1,39 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h1>Panel de Administración</h1>
+
+<h2>Libros</h2>
+<ul>
+    {% for libro in libros %}
+    <li>
+        {{ libro.titulo }} - {{ libro.autor }}
+        <a href="{% url 'edit_item' 'libro' libro.id %}">Editar</a>
+        <a href="{% url 'delete_item' 'libro' libro.id %}" onclick="return confirm('¿Estás seguro de que quieres eliminar este libro?');">Eliminar</a>
+    </li>
+    {% endfor %}
+</ul>
+
+<h2>Autores</h2>
+<ul>
+    {% for autor in autores %}
+    <li>
+        {{ autor.nombre }}
+        <a href="{% url 'edit_item' 'autor' autor.id %}">Editar</a>
+        <a href="{% url 'delete_item' 'autor' autor.id %}" onclick="return confirm('¿Estás seguro de que quieres eliminar este autor?');">Eliminar</a>
+    </li>
+    {% endfor %}
+</ul>
+
+<h2>Editoriales</h2>
+<ul>
+    {% for editorial in editoriales %}
+    <li>
+        {{ editorial.nombre }}
+        <a href="{% url 'edit_item' 'editorial' editorial.id %}">Editar</a>
+        <a href="{% url 'delete_item' 'editorial' editorial.id %}" onclick="return confirm('¿Estás seguro de que quieres eliminar esta editorial?');">Eliminar</a>
+    </li>
+    {% endfor %}
+</ul>
+{% endblock %}
+

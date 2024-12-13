@@ -7,7 +7,7 @@ from .forms import UserRegisterForm
 
 class UserRegisterView(CreateView):
     form_class = UserRegisterForm
-    template_name = 'app_preentrega3/register.html'  # Ruta correcta
+    template_name = 'register.html'
     success_url = reverse_lazy('login')
 
     def form_valid(self, form):
@@ -16,7 +16,7 @@ class UserRegisterView(CreateView):
         return response
 
 class UserLoginView(LoginView):
-    template_name = 'app_preentrega3/login.html'  # Ruta correcta
+    template_name = 'login.html'
     
     def get_success_url(self):
         return reverse_lazy('home')
