@@ -11,6 +11,11 @@ El usuario debera registrarse e iniciar sesion esta informacion de su cuenta se 
 
 El admin de la pagina podra ver los blogs que sube los demas y editarlos o borrarlos, tambien tiene una seccion donde puede borrar autores editoriales y libros que pueden ser modificadas.
 
+superusuario:
+Nombre: admin
+Contraseña: 33trutruta
+
+
 
 LINK DEL VIDEO:
 
